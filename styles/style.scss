@@ -1,0 +1,93 @@
+@import './variables';
+
+body {
+  background-color: $cream;
+  font-family: 'DM Sans', sans-serif;
+  margin: auto;
+  width: 90%;
+}
+
+hr {
+  border: 1px solid $cream;
+  margin-bottom: 1.5em;
+}
+
+.header {
+  background-color: $soft-red;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  padding: 1.5em 1.2em;
+
+  .header__text {
+    color: $very-pale-orange;
+    margin: 0;
+
+    &:last-of-type {
+      font-size: 1.8em;
+      font-weight: 700;
+    }
+  }
+
+  .header__circle_outlined {
+    @include createCircle;
+    border: 2px solid $very-pale-orange;
+    left: 1em;
+    z-index: 1;
+  }
+
+  .header__circle_filled {
+    @include createCircle;
+    background-color: $dark-brown;
+    border: 2px solid $dark-brown;
+    right: 1em;
+  }
+}
+
+.expenses-chart {
+  background-color: $white;
+  border-radius: 1em;
+  margin: 1em 0;
+  padding: 1em 1.2em;
+
+  .expenses-chart__title {
+    color: $dark-brown;
+  }
+
+  .week-days {
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: space-between;
+
+    .week-days__day {
+      color: $medium-brown;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  .footer__subtitle {
+    color: $medium-brown;
+    margin-top: 0;
+
+    &:first-of-type {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  .footer__amount {
+    color: $dark-brown;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 0.5em;
+
+    &:last-of-type {
+      font-size: 2em;
+      margin-top: 0;
+    }
+  }
+}

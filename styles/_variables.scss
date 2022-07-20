@@ -1,0 +1,21 @@
+// DM Sans
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+// Primary
+$soft-red: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+
+// Neutral
+$dark-brown: hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$very-pale-orange: hsl(33, 100%, 98%);
+$white: hsl(0, 0%, 100%);
+
+@mixin createCircle {
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+}

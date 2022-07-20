@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+body {
+  background-color: #f8e9dd;
+  font-family: 'DM Sans', sans-serif;
+  margin: auto;
+  width: 90%;
+}
+
+hr {
+  border: 1px solid #f8e9dd;
+  margin-bottom: 1.5em;
+}
+
+.header {
+  background-color: #ec775f;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3em;
+  padding: 1.5em 1.2em;
+}
+
+.header .header__text {
+  color: #fffaf5;
+  margin: 0;
+}
+
+.header .header__text:last-of-type {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.header .header__circle_outlined {
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+  border: 2px solid #fffaf5;
+  left: 1em;
+  z-index: 1;
+}
+
+.header .header__circle_filled {
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+  background-color: #382314;
+  border: 2px solid #382314;
+  right: 1em;
+}
+
+.expenses-chart {
+  background-color: white;
+  border-radius: 1em;
+  margin: 1em 0;
+  padding: 1em 1.2em;
+}
+
+.expenses-chart .expenses-chart__title {
+  color: #382314;
+}
+
+.expenses-chart .week-days {
+  margin-bottom: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.expenses-chart .week-days .week-days__day {
+  color: #93867b;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__subtitle {
+  color: #93867b;
+  margin-top: 0;
+}
+
+.footer .footer__subtitle:first-of-type {
+  margin-bottom: 0.3em;
+}
+
+.footer .footer__amount {
+  color: #382314;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 0.5em;
+}
+
+.footer .footer__amount:last-of-type {
+  font-size: 2em;
+  margin-top: 0;
+}
+/*# sourceMappingURL=style.css.map */
