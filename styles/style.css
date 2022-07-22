@@ -8,7 +8,7 @@ body {
 
 hr {
   border: 1px solid #f8e9dd;
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
 }
 
 .header {
@@ -67,17 +67,56 @@ hr {
   color: #382314;
 }
 
-.expenses-chart .week-days {
-  margin-bottom: 1.5em;
+.expenses-chart .expenses-chart__data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 220px;
 }
 
-.expenses-chart .week-days .week-days__day {
+.expenses-chart .expenses-chart__data .expenses-chart__graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.expenses-chart .expenses-chart__data .expenses-chart__graph .expenses-chart__amount {
+  border-radius: 10%;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.3em;
+}
+
+.expenses-chart .expenses-chart__data .expenses-chart__graph .expenses-chart__bar {
+  background-color: #ec775f;
+  min-width: 75%;
+  border-radius: 5px;
+}
+
+.expenses-chart .expenses-chart__data .expenses-chart__graph:hover .expenses-chart__amount {
+  background-color: #382314;
+}
+
+.expenses-chart .expenses-chart__data .expenses-chart__graph:hover .expenses-chart__bar {
+  opacity: 70%;
+}
+
+.expenses-chart .week-days__day {
   color: #93867b;
 }
 
