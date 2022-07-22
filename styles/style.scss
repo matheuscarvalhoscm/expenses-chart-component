@@ -9,7 +9,7 @@ body {
 
 hr {
   border: 1px solid $cream;
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
 }
 
 .header {
@@ -55,14 +55,41 @@ hr {
     color: $dark-brown;
   }
 
-  .week-days {
-    margin-bottom: 1.5em;
+  .expenses-chart__data {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    min-height: 220px;
 
-    .week-days__day {
-      color: $medium-brown;
+    .expenses-chart__graph {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .expenses-chart__amount {
+        border-radius: 10%;
+        color: $white;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        padding: 0.3em 0.3em;
+      }
+
+      .expenses-chart__bar {
+        background-color: $soft-red;
+        min-width: 75%;
+        border-radius: 5px;
+      }
+
+      &:hover {
+        .expenses-chart__amount { background-color: $dark-brown; }
+        .expenses-chart__bar {opacity: 70%; }
+      }
     }
+  }
+
+  .week-days__day {
+    color: $medium-brown;
   }
 }
 
