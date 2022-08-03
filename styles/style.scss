@@ -4,7 +4,7 @@ body {
   background-color: $cream;
   font-family: 'DM Sans', sans-serif;
   margin: auto;
-  width: 90%;
+  width: 22em;
 }
 
 hr {
@@ -17,7 +17,7 @@ hr {
   border-radius: 1em;
   display: flex;
   justify-content: space-between;
-  margin-top: 3em;
+  margin-top: 4em;
   padding: 1.5em 1.2em;
 
   .header__text {
@@ -77,13 +77,13 @@ hr {
 
       .expenses-chart__bar {
         background-color: $soft-red;
-        min-width: 75%;
+        min-width: 80%;
         border-radius: 5px;
       }
 
       &:hover {
         .expenses-chart__amount { background-color: $dark-brown; }
-        .expenses-chart__bar {opacity: 70%; }
+        .expenses-chart__bar { opacity: 70%; }
       }
     }
   }
@@ -116,5 +116,22 @@ hr {
       font-size: 2em;
       margin-top: 0;
     }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+  body { 
+    width: 25em; 
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body { 
+    width: 28em;
+  }
+
+  .expenses-chart__bar { 
+    min-width: 100% !important;
   }
 }
